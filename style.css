@@ -262,7 +262,7 @@ min-width: 0;
 }
 
 .card a{
-    text-decoration: none;
+    color: rgb(29, 29, 29);
     font-weight: bold;
 }
 
