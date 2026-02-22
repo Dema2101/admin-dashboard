@@ -252,14 +252,17 @@ border-radius: 10px;
 .project-info{
 min-width: 0;
 }
-.project-info p{
+.project-info p,
+.announcement-card p{
   margin-top: 0;
   margin-bottom: 0;
-  color: rgb(87, 87, 87);
-  font-weight: bold;
-
- 
+  color: rgb(56, 56, 56); 
 }
+.project-info p{
+      color: rgb(87, 87, 87); 
+      font-weight: bold;
+}
+
 .card h3{
     font-size: 1.5em;
     margin-bottom: 5%;
@@ -295,6 +298,7 @@ gap: 5px;
 .fa-heart-circle-plus,
 .fa-share{
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 .project-image span{
@@ -313,20 +317,22 @@ gap: 5px;
 .announcement { 
 grid-column: 2; 
 grid-row: 1; 
+margin-bottom: 10%;
 }
 
 .announcement h2{
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .announcement-content{
-  padding: 16px;
-  gap: 30px;
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: auto auto;
+    padding: 16px 0 16px 16px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
 }
 
-.announcement-card{
+.announcement-card,
+.trending-card{
   padding: 16px;
 
   height: min-content;
@@ -334,6 +340,10 @@ grid-template-rows: auto auto;
   background: #fff;
 }
 
+.announcement-card h4{
+    font-size: 1.2em;
+    margin-bottom: 5%;
+}
 
 
 
@@ -341,6 +351,13 @@ grid-template-rows: auto auto;
 
 
 
-
-.trending     { grid-column: 2; grid-row: 2; }
-
+.trending     { grid-column: 2; grid-row: 2;}
+.trending h2,
+.announcement h2{
+ text-align: center;
+}
+.trending-card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
